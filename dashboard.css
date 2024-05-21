@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.imagefond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('savaneacc.jpeg');
+    background-size: cover;
+    filter: blur(5px); /* Applique un flou à l'image de fond */
+    z-index: -1; /* Pour s'assurer que l'élément de fond est en arrière-plan */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+.login-form {
+    text-align: center; /* Ajoutez cette ligne */
+}
+
+.login-box {
+    display: inline-block;
+    background-color: #456F45; /* Couleur de fond semi-transparente */
+    border: 2px solid #456F45;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* Ajout de margin:auto pour centrer horizontalement */
+    box-shadow: 4px 4px 4px #583434;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Les éléments à l'intérieur seront empilés verticalement par défaut */
+    align-items: center; /* Alignement horizontal au centre */
+}
+
+.style,
+.logout-container input[type="submit"] {
+    border: 1px solid #FEB969;
+    margin-top: 5px;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #FEB969;
+    width: 150px;
+    height: 30px; /* Hauteur fixe pour tous les boutons */
+    margin-top: 12px;
+    text-align: center;
+}
+
+.style:hover {
+    background-color: rgb(120, 89, 89);
+    color: white;
+}
+
+.style1, 
+.style2 {
+    border: 1px solid #ffffff;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.ombretexte {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Définit une ombre de 2px horizontalement et verticalement, avec un flou de 4px et une couleur noire semi-transparente */
+}
+
+.logout-container {
+    text-align: center;
+    
+}
+
+.button-container {
+    text-align: center;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Alignement horizontal au centre */
+}
+
+.button-container input[type="submit"],
+.logout-container input[type="submit"] {
+    margin: 0 10px; /* Espacement entre les boutons */
+}

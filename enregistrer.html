@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="log2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="imagefond"></div>
+    <center><h1 class="ombretexte">ZOO</h1></center>
+    <form action="register.php" method="post" class="login-form">
+        <center><div class="login-box">
+            <center><h2>S'inscrire</h2></center>
+
+            <label for="Statut">Statut</label><br>
+            <select name="Statut" id="Statut" onChange="redirect()">
+                <option value="Employés">Employés</option>
+                <option value="Patron">Patron</option>
+                
+            </select>
+            
+            <script>
+                function redirect() {
+                    var selectBox = document.getElementById("Statut");
+                    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+                    if (selectedValue === "Patron") {
+                        window.location.href = "enregistrerpatron.html";
+                    }
+                }
+            </script><br> <br>
+
+            Nom : <input type="text" name="nom" class="style1"><br>
+            Prénom: <input type="text" name="prenom" class="style2"><br>
+            <br>
+            <label for="sexe">Sexe</label><br>
+            <select name="sexe" id="sexe">
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select> <br> <br>
+
+            Nom de Login : <input type="text" name="login" class="style1"><br>
+            Mot de passe : <input type="password" name="motdepasse" class="style2"><br>
+            <input type="submit" value="S'inscrire" class="style"><br>
+            <input type="reset" value="Annuler" class="style"><br><br>
+            <a href="index.html">Se connecter</a>
+        </div></center>
+    </form>
+</body>
+</html>
